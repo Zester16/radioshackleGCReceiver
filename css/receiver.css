@@ -12,7 +12,7 @@ cast-media-player{
   /* --background-size: 200px 200px;
   --background-image: url("https://radioshackle-sjqq3.ondigitalocean.app/svg_and_images/radio_shackle.svg"); */
   --splash-image: url("https://radioshackle-sjqq3.ondigitalocean.app/svg_and_images/radio_shackle.svg");
-  --splash-size: 200px 200px;
+  /* --splash-size: 200px 200px; */
   --splash-color:rgb(20, 33, 61);
 }
 .logo {
