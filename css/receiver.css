@@ -8,7 +8,7 @@ body {
   --playback-logo-image: url("https://radioshackle-sjqq3.ondigitalocean.app/svg_and_images/radio_shackle.svg");
 }
 cast-media-player{
-  --background: center no-repeat rgb(20, 33, 61);
+  --background: rgb(20, 33, 61);
   /* --background-size: 200px 200px;
   --background-image: url("https://radioshackle-sjqq3.ondigitalocean.app/svg_and_images/radio_shackle.svg"); */
   --splash-image: url("https://radioshackle-sjqq3.ondigitalocean.app/svg_and_images/radio_shackle.svg");
