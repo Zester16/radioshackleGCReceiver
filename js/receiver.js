@@ -4,6 +4,14 @@ const playerManager = context.getPlayerManager();
 //const touchControls = cast.framework.ui.Controls.getInstance();
 // let playerElement = document.getElementsByTagName("cast-media-player")[0];
 // playerElement.style.setProperty('--splash-image', 'url("http://some/other/image.png")');
+playerManager.setMessageInterceptor(
+  cast.framework.messages.MessageType.LOAD,
+  request => {
+    const musicTrack = new cast.framework.messages.MusicTrackMediaMetadata()
+    musicTrack.albumName = "Classic Radio"
+    request.media.metadata = musicTrack
+    return request
+  }
 playerManager.addEventListener(
   cast.framework.events.EventType.PLAYER_LOAD_COMPLETE, () => {
     const musicTrack = new cast.framework.messages.MusicTrackMediaMetadata()
