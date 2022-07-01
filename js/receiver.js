@@ -11,7 +11,7 @@ playerManager.setMessageInterceptor(
     musicTrack.albumName = "Classic Radio"
     request.media.metadata = musicTrack
     return request
-  }
+  })
 playerManager.addEventListener(
   cast.framework.events.EventType.PLAYER_LOAD_COMPLETE, () => {
     const musicTrack = new cast.framework.messages.MusicTrackMediaMetadata()
