@@ -10,7 +10,7 @@ playerManager.setMessageInterceptor(
     const musicTrack = new cast.framework.messages.MusicTrackMediaMetadata()
     musicTrack.albumName = "Classic Radio"
     musicTrack.title = "Classic Radio"
-    musicTrack.images[0] = new cast.framework.messages.Image("https://www.klassikradio.de//_nuxt/img/72ebcae.png")
+    // musicTrack.images[0] = new cast.framework.messages.image("https://www.klassikradio.de//_nuxt/img/72ebcae.png")
 
     request.media.metadata = musicTrack
     return request
