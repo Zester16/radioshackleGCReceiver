@@ -4,7 +4,7 @@ const playerManager = context.getPlayerManager();
 //const touchControls = cast.framework.ui.Controls.getInstance();
 // let playerElement = document.getElementsByTagName("cast-media-player")[0];
 // playerElement.style.setProperty('--splash-image', 'url("http://some/other/image.png")');
-const musicTrack = cast.framework.messages.MusicTrackMediaMetadata()
+const musicTrack = cast.framework.messages.MusicTrackMediaMetadata
 musicTrack.albumName = "Classic Radio"
 
 
