@@ -9,16 +9,12 @@ playerManager.setMessageInterceptor(
   request => {
     const musicTrack = new cast.framework.messages.MusicTrackMediaMetadata()
     musicTrack.albumName = "Classic Radio"
+    musicTrack.title = "Classic Radio"
+    musicTrack.images[0] = "https://www.klassikradio.de//_nuxt/img/72ebcae.png"
     request.media.metadata = musicTrack
     return request
   })
-playerManager.addEventListener(
-  cast.framework.events.EventType.PLAYER_LOAD_COMPLETE, () => {
-    const musicTrack = new cast.framework.messages.MusicTrackMediaMetadata()
-    musicTrack.albumName = "Classic Radio"
-    playerManager.getQueueManager().setContainerMetadata(musicTrack);
 
-})
 
 
 
